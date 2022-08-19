@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+</head>
+
+<body>
+
+    <h4>UNIT TESTING USING BOOTCAMP FUNTIONS</h4>
+    <div id="mocha"></div>
+    <script src="/BootcampFunctions/greet.js"></script>
+    <script src="/BootcampFunctions/countAllPaarl.js"></script>
+    <script src="/BootcampFunctions/isWeekday.js"></script>
+    <script src="/BootcampFunctions/totalPhoneBill.js"></script>
+    <script src="/BootcampFunctions/yearsAgo.JS"></script>
+
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+    </script>
+
+    <script src="/testing/greetTesting.js"></script>
+    <script src="/testing/countAllPaarlTesting.js"></script>
+    <script src="/testing/isWeekdayTesting.js"></script>
+    <script src="/testing/tolatPhoneBilTesting.js"></script>
+    <script src="/testing/yearsAgoTesting.js"></script>
+    <script>
+        // configure and run mocha
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+
+</body>
+
+</html>
